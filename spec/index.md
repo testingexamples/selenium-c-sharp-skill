@@ -13,13 +13,13 @@ In scope:
 - Selenium does not auto-wait; use WebDriverWait with a lambda condition, and never mix implicit with explicit waits.
 - Contrasting a plain walkthrough with a real test: NUnit with Assert.That constraints.
 - Common pitfalls specific to Selenium WebDriver + C#.
-- Official documentation links.
+- Official documentation links, and a link to the sibling [demo-selenium-c-sharp](https://github.com/testingexamples/demo-selenium-c-sharp) repo.
 
 Out of scope:
 
 - Other language bindings of Selenium WebDriver.
 - General C# language teaching unrelated to Selenium WebDriver.
-- A runnable project — this repo is teaching material, not a demo. No `demo-*-selenium-c-sharp-skill` sibling repo exists yet, so SKILL.md must not link to one.
+- A runnable project — this repo is teaching material, not a demo. The runnable walkthrough is the sibling repo [demo-selenium-c-sharp](https://github.com/testingexamples/demo-selenium-c-sharp).
 - Automating Google Search or Google Maps for real, repeated use; the Terms-of-Service caveat is stated in SKILL.md.
 
 ## Principles and rules

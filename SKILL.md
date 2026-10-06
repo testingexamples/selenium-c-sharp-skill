@@ -160,6 +160,7 @@ Use NUnit's constraint model, `Assert.That(actual, Is.EqualTo(expected))`; the c
 
 ## Learn more
 
+- https://github.com/testingexamples/demo-selenium-c-sharp — the runnable locator-strategy walkthrough this skill's examples are drawn from, run against https://testingexamples.github.io.
 - https://www.selenium.dev/documentation/webdriver/ — official WebDriver documentation.
 - https://www.selenium.dev/selenium/docs/api/dotnet/ — .NET API reference.
 - https://testingexamples.github.io/ — the free, stable fixture page used above; safe to run repeatedly.
