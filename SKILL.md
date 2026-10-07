@@ -68,7 +68,7 @@ IWebElement element = wait.Until(d =>
 
 ## Full worked example
 
-A walkthrough against the free fixture page https://testingexamples.github.io (top-level statements, .NET 6+):
+A walkthrough against the free fixture page https://testingexamples.github.io/en-001/practice/ (top-level statements, .NET 6+):
 
 ```csharp
 using OpenQA.Selenium;
@@ -80,7 +80,7 @@ options.AddArgument("--disable-notifications");
 
 using IWebDriver driver = new ChromeDriver(options);   // Dispose() quits the browser
 
-driver.Navigate().GoToUrl("https://testingexamples.github.io");
+driver.Navigate().GoToUrl("https://testingexamples.github.io/en-001/practice/");
 
 // Locate by id, name, class name, link text, and XPath.
 Console.WriteLine(driver.FindElement(By.Id("id-example-1")).GetAttribute("outerHTML"));
@@ -124,7 +124,7 @@ public class FixtureTests
     public void SetUp()
     {
         driver = new ChromeDriver();
-        driver.Navigate().GoToUrl("https://testingexamples.github.io");
+        driver.Navigate().GoToUrl("https://testingexamples.github.io/en-001/practice/");
     }
 
     [TearDown]
@@ -160,10 +160,10 @@ Use NUnit's constraint model, `Assert.That(actual, Is.EqualTo(expected))`; the c
 
 ## Learn more
 
-- https://github.com/testingexamples/demo-selenium-c-sharp — the runnable locator-strategy walkthrough this skill's examples are drawn from, run against https://testingexamples.github.io.
+- https://github.com/testingexamples/demo-selenium-c-sharp — the runnable locator-strategy walkthrough this skill's examples are drawn from, run against https://testingexamples.github.io/en-001/practice/.
 - https://www.selenium.dev/documentation/webdriver/ — official WebDriver documentation.
 - https://www.selenium.dev/selenium/docs/api/dotnet/ — .NET API reference.
-- https://testingexamples.github.io/ — the free, stable fixture page used above; safe to run repeatedly.
+- https://testingexamples.github.io/en-001/practice/ — the free, stable fixture page used above; safe to run repeatedly.
 - Google Search and Google Maps restrict automated querying in their Terms of Service; do not point repeated automation at them.
 
 ---
